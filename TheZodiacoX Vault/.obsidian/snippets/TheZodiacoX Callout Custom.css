@@ -1,0 +1,31 @@
+/* --- CALLOUT PACK DEFAULT THEZODIACOX --- */
+
+/* Importante */
+.callout[data-callout="important"] {
+    --callout-color: 137, 83, 188;
+    --callout-icon: shield-alert;
+}
+	
+/* Peligro */
+.callout[data-callout="danger"] {
+    --callout-color: 209, 35, 35;
+    --callout-icon: octagon-alert;
+}
+
+/* Consejo/Recomendacion */
+.callout[data-callout="tip"] {
+    --callout-color: 64, 209, 0;
+    --callout-icon: lightbulb;
+}
+
+/* Pregunta */
+.callout[data-callout="question"] {
+    --callout-color: 153, 153, 153;
+    --callout-icon: shield-question;
+}
+
+/* Ejemplo	 */
+.callout[data-callout="example"] {
+    --callout-color: 201, 0, 118;
+    --callout-icon: chevrons-right;
+}

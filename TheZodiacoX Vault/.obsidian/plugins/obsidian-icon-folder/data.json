@@ -1,0 +1,106 @@
+{
+  "settings": {
+    "migrated": 3,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "BoBxsUser",
+      "BoBxFile",
+      "BoBxUser",
+      "ThZodiacoLogoPlugin",
+      "ThZIcon"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": " - Maps of Content",
+        "icon": "BoBxGlobeAlt",
+        "for": "folders",
+        "order": 0
+      },
+      {
+        "rule": " - Projects",
+        "icon": "BoBxsPen",
+        "for": "folders",
+        "order": 1
+      },
+      {
+        "rule": " - Areas",
+        "icon": "BoBxsPackage",
+        "for": "folders",
+        "order": 2
+      },
+      {
+        "rule": " - Resources",
+        "icon": "BoBxsBook",
+        "for": "folders",
+        "order": 3
+      },
+      {
+        "rule": " - Fleeting",
+        "icon": "BoBxsPencil",
+        "for": "folders",
+        "order": 4
+      },
+      {
+        "rule": "- Daily",
+        "icon": "BoBxCalendarEvent",
+        "for": "folders",
+        "order": 5
+      },
+      {
+        "rule": "- Meta",
+        "icon": "BoBxSelection",
+        "for": "folders",
+        "order": 6
+      },
+      {
+        "rule": "- Templates",
+        "icon": "BoBxRuler",
+        "for": "everything",
+        "order": 7
+      },
+      {
+        "rule": "- Permanent",
+        "icon": "BoBxsFile",
+        "for": "everything",
+        "order": 8
+      },
+      {
+        "rule": "- Archives",
+        "icon": "BoBxsArchive",
+        "for": "folders",
+        "order": 9
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 2,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true
+  },
+  "01 - New Folder": "ThZodiacoLogoPlugin",
+  "02 - New Folder": "ThZodiacoLogoPlugin",
+  "03 - New Folder": "ThZodiacoLogoPlugin",
+  "04 - New Folder": "ThZodiacoLogoPlugin",
+  "05 - New Folder": "ThZodiacoLogoPlugin",
+  "06 - New Folder": "ThZodiacoLogoPlugin",
+  "07 - New Folder": "ThZodiacoLogoPlugin",
+  "08 - New Folder": "ThZodiacoLogoPlugin",
+  "09 - New Folder": "ThZodiacoLogoPlugin",
+  "10 - New Folder": "ThZodiacoLogoPlugin",
+  "11 - New Folder": "ThZodiacoLogoPlugin",
+  "12 - New Folder": "ThZodiacoLogoPlugin",
+  "13 - New Folder": "ThZodiacoLogoPlugin",
+  "14 - New Folder": "ThZodiacoLogoPlugin",
+  "15 - New Folder": "ThZodiacoLogoPlugin",
+  "00 - New Folder": "ThZodiacoLogoPlugin"
+}
