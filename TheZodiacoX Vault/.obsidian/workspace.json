@@ -73,9 +73,18 @@
               "icon": "clock",
               "title": "Recent Files"
             }
+          },
+          {
+            "id": "1cb1c7f019829ec6",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -166,7 +175,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
@@ -178,10 +186,12 @@
       "obsidian-importer:Open Importer": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "homepage:Open homepage": false,
-      "callout-manager:Insert Callout": false
+      "callout-manager:Insert Callout": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "533187b54547e2e7",
+  "active": "cdce16e196def10e",
   "lastOpenFiles": [
     "01 - New Folder/Placeholder.md",
     "00 - New Folder/Placeholder.md",

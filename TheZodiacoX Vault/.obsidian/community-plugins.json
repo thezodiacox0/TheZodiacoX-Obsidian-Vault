@@ -12,5 +12,6 @@
   "obsidian-text-format",
   "homepage",
   "callout-manager",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-tasks-plugin"
 ]

@@ -1,4 +1,4 @@
-# TheZodiacoX Obsidian Vault v1.0.0
+# TheZodiacoX Obsidian Vault v1.1.0
 ## A Template for my Obsidian Vault.
 
 ![obsidian](/img/obsidian_view.jpg)
@@ -20,18 +20,19 @@ This vault contains several of [CyanVoxel](https://github.com/CyanVoxel/) other 
 
 - Callout Manager (v1.1.0)
 - Completr (v3.2.0)
-- Excalidraw (v2.0.17)
-- Homepage (v3.7.0)
-- Iconize (v2.8.1)
-- Importer (v1.5.6)
+- Excalidraw (v2.13.1)
+- Homepage (v4.2.2)
+- Iconize (v2.14.7)
+- Importer (v1.6.21)
 - Paste URL into selection (v1.7.0)
-- Recent Files (v1.3.9)
+- Recent Files (v1.7.4)
 - Settings Search (v1.3.10)
 - Smart Typography (v1.0.18)
-- Spaced Repetition (v1.10.5)
-- Tag Wrangler (v0.6.1)
-- Templater (v1.18.3)
-- Text Format (v2.4.0)
+- Spaced Repetition (v1.13.3)
+- Tag Wrangler (v0.6.4)
+- Templater (v2.13.1)
+- Text Format (v3.1.0)
+- Tasks (v7.20.0)
 
 ## Credits to
 This Obsidian Vault is based on the original released by [CyanVoxel](https://github.com/CyanVoxel/) which I want to give credit for be its original creator.
