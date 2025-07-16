@@ -1,0 +1,29 @@
+name: ZIP Vault
+
+on:
+  push:
+    branches:
+      - vault
+  workflow_dispatch:
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make ZIP
+        run: |
+          mkdir TheZodiacoX-Vault
+          cp -a TheZodiacoX\ Vault/. TheZodiacoX-Vault/
+          zip -r Vault-1.0.${{ github.run_number }}.zip TheZodiacoX-Vault
+
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create 1.0.${{ github.run_number }} Vault-1.0.${{ github.run_number }}.zip \
+            --target ${{ github.sha }} \
+            -t "Obsidian Vault v1.0.${{ github.run_number }}" \
+            -n "Release testing (run #${{ github.run_number }})"
