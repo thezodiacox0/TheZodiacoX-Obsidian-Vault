@@ -1,7 +1,7 @@
-# TheZodiacoX Obsidian Vault v1.1.0
+# TheZodiacoX Obsidian Vault v1.1.2
 ## A Template for my Obsidian Vault.
 
-![obsidian](/img/obsidian_view.jpg)
+![obsidian](/img/obsidian_view.png)
 
 This is a copy of my Obsidian Vault that you can use as a template or inspiration for your own vault.
 

@@ -1,4 +1,4 @@
-name: ZIP Vault
+name: ZIP Obsidian Vault
 
 on:
   push:
@@ -17,13 +17,13 @@ jobs:
         run: |
           mkdir TheZodiacoX-Vault
           cp -a TheZodiacoX\ Vault/. TheZodiacoX-Vault/
-          zip -r Vault-1.1.${{ github.run_number }}.zip TheZodiacoX-Vault
+          zip -r Vault-1.1.2.${{ github.run_number }}.zip TheZodiacoX-Vault
 
-      - name: Create Release
+      - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create 1.1.${{ github.run_number }} Vault-1.1.${{ github.run_number }}.zip \
+          gh release create 1.1.2.${{ github.run_number }} Vault-1.1.2.${{ github.run_number }}.zip \
             --target ${{ github.sha }} \
-            -t "Obsidian Vault v1.1.${{ github.run_number }}" \
+            -t "Obsidian Vault v1.1.2.${{ github.run_number }}" \
             -n "Release testing (run #${{ github.run_number }})"
