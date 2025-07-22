@@ -1,4 +1,4 @@
-name: ZIP Obsidian Vault
+name: 7z Obsidian Vault
 
 on:
   push:
@@ -9,21 +9,44 @@ on:
 jobs:
   build-release:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make ZIP
+      - name: Set Obsidian Vault version
+        run: echo "VERSION=1.1.5" >> $GITHUB_ENV 
+
+      - name: Make 7z
         run: |
           mkdir TheZodiacoX-Vault
-          cp -a TheZodiacoX\ Vault/. TheZodiacoX-Vault/
-          zip -r Vault-1.1.2.${{ github.run_number }}.zip TheZodiacoX-Vault
+          cp -a "TheZodiacoX Vault/." TheZodiacoX-Vault/
+          7z a Vault-${{ env.VERSION }}.${{ github.run_number }}.7z TheZodiacoX-Vault
+
+      - name: Get last commit body
+        id: commit
+        run: |
+          body=$(git log -1 --pretty=%b)
+
+          if [ -z "$body" ]; then
+            formatted_body="- [GitHub] No Changes"
+          else
+            formatted_body=$(echo "$body" | sed 's/^/- /')
+          fi
+
+          {
+            echo "body<<EOF"
+            echo "## Vault v${VERSION}"
+            echo ""
+            echo "$formatted_body"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create 1.1.2.${{ github.run_number }} Vault-1.1.2.${{ github.run_number }}.zip \
+          gh release create ${VERSION}.${{ github.run_number }} Vault-${VERSION}.${{ github.run_number }}.7z \
             --target ${{ github.sha }} \
-            -t "Obsidian Vault v1.1.2.${{ github.run_number }}" \
-            -n "Release testing (run #${{ github.run_number }})"
+            -t "Obsidian Vault v${VERSION}.${{ github.run_number }}" \
+            -n "${{ steps.commit.outputs.body }}"

@@ -1,4 +1,4 @@
-# TheZodiacoX Obsidian Vault v1.1.2
+# TheZodiacoX Obsidian Vault v1.1.5
 ## A Template for my Obsidian Vault.
 
 ![obsidian](/img/obsidian_view.png)
@@ -20,7 +20,7 @@ This vault contains several of [CyanVoxel](https://github.com/CyanVoxel/) other 
 
 - Callout Manager (v1.1.0)
 - Completr (v3.2.0)
-- Excalidraw (v2.13.1)
+- Excalidraw (v2.13.2)
 - Homepage (v4.2.2)
 - Iconize (v2.14.7)
 - Importer (v1.6.21)
